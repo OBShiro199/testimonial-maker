@@ -1,14 +1,32 @@
 # Testimonial Studio
 
-A small, dependency-free web app for recording video testimonials.
+A small, dependency-free web app for recording video testimonials. It is styled with the Quiet Precision design system (white surfaces, hairlines, Geist, one pastel-blue accent).
 
 1. **Sign in** with the password (`rosewell`).
 2. **Frame**: turn on the webcam and centre your face in the oval. Live checks show when you're centred and sitting still.
-3. **Record**: a 3-2-1 countdown starts the take, and the teleprompter at the top (right under your camera) scrolls the script.
-4. **Export**: review the take, retake it, or download it (MP4 where the browser supports it, otherwise WebM).
+3. **Record**: an optional 3-2-1 countdown starts the take, and the teleprompter at the top (just under your camera) scrolls the script. You can pause and resume the recording.
+4. **Export**: play the take back, retake it, or export it (MP4 where the browser supports it, otherwise WebM).
 
-The script, scroll speed and text size are saved in the browser. You can also scroll the teleprompter by hand.
-Shortcuts: `Space` starts or stops recording, and `↑`/`↓` change the scroll speed.
+## Mirroring
+
+With **Mirror video** on (the default), the recording is mirrored exactly like the preview, so playback and the exported file look the way you saw yourself. Turn it off in Settings to record the camera's unmirrored view.
+
+## Teleprompter controls
+
+| Control | Shortcut |
+| --- | --- |
+| Play or pause the teleprompter (works without recording, for rehearsing) | `P` |
+| Back to the start | `Home` |
+| Previous or next paragraph | `←` `→` |
+| Speed in words per minute, 60–240 | `↑` `↓` |
+| Text size S, M, L, XL | `[` `]` |
+| Start or stop recording | `Space` |
+| Pause or resume the recording | `M` |
+| Shortcut list | `?` |
+
+You can also scroll the teleprompter with the mouse wheel or by dragging, or click a paragraph to jump to it. The paragraph on the reading line is highlighted, and a progress bar shows time left at the current speed.
+
+Settings: mirror video, 3-second countdown, play the teleprompter when recording starts, rewind the script before each take, and show the framing guide. The script, speed, size and settings are saved in the browser.
 
 ## Run locally
 
